@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+                 Software Foundation//DTD Tiles Configuration 3.0//EN"
+                   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+                   
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="..."/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="content" value="base"/>
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chu"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+    
+    <definition name="contact" extends="baseLayout">
+        <put-attribute name="title" value="Lien he"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/contact.jsp"/>
+    </definition>
+    
+    <definition name="info" extends="baseLayout">
+        <put-attribute name="title" value="Thong tin"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/info.jsp"/>
+    </definition>
+    
+    <definition name="manage" extends="baseLayout">
+        <put-attribute name="title" value="Quan li"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/manage.jsp"/>
+    </definition>
+    
+    <definition name="money" extends="baseLayout">
+        <put-attribute name="title" value="Quan li tien nha"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/money.jsp"/>
+    </definition>
+    
+    <definition name="addNewMember" extends="baseLayout">
+        <put-attribute name="title" value="Them thanh vien moi"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/memberAddition.jsp"/>
+    </definition>
+    
+    <definition name="updatePage" extends="baseLayout">
+        <put-attribute name="title" value="Cap nhat thong tin"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/updateMember.jsp"/>
+    </definition>
+    <definition name="changePassword" extends="baseLayout">
+        <put-attribute name="title" value="Doi mat khau"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/changePassword.jsp"/>
+    </definition>
+   
+    
+</tiles-definitions>
